@@ -3,5 +3,5 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    del response.headers['Cache-Control']
+    del response.headers['cache-control']
     return 'Hello, World!'
