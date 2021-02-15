@@ -7,5 +7,5 @@ def hello_world():
 
 @app.after_request
 def remove_header(response):
-    del response.headers['cache-control']
+    del response.headers['Cache-Control']
     return response
